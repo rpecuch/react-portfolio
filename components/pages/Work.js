@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from '../Project';
 
+//TODO: add newer projects
 function Work () {
     const kidsRx = {
         image: 'kids-rx.png',
@@ -32,14 +33,54 @@ function Work () {
         tech: "Created using HTML, custom CSS, and JavaScript."
     }
 
-    const p = {
-        image:
-        alt:
-        link:
-        title:
-        description:
-        github:
-        tech:
+    const schedule = {
+        image: "work-scheduler.png",
+        alt: "work day scheduler application",
+        link: "https://rpecuch.github.io/work-day-scheduler/",
+        title: "Work Day Scheduler",
+        description: "An application to create and save events for the work day.",
+        github: "https://github.com/rpecuch/work-day-scheduler",
+        tech: "Created using HTML, Bootstrap, custom CSS, JavaScript, jQuery, Moment.js, Font Awesome, and Google Fonts."
+    }
+
+    const weather = {
+        image: "weather.png",
+        alt: "weather dashboard application",
+        link: "https://rpecuch.github.io/weather-dashboard/",
+        title: "Weather Dashboard",
+        description: "An application to display the weather forecast for a city that is searched by the user",
+        github: "https://github.com/rpecuch/weather-dashboard",
+        tech: "Created using HTML, Bootstrap, custom CSS, JavaScript, Moment.js, Font Awesome, and Google Fonts."
+    }
+
+    const note = {
+        image: "note-taker.png",
+        alt: "note taker application",
+        link: "https://express-note-taker-rp.herokuapp.com/",
+        title: "Note Taker",
+        description: "A full-stack application to allow the user to write, save, and delete notes",
+        github: "https://github.com/rpecuch/note-taker",
+        tech: "Created using HTML, Bootstrap, custom CSS, JavaScript, Node.js, and Express."
+    }
+
+    const team = {
+        image: "team-generator.png",
+        alt: "team profile generator application",
+        link: "https://github.com/rpecuch/team-profile-generator",
+        title: "Team Profile Generator",
+        description: "A command-line application to allow the user to generate an HTML document with information about a software engineering team.",
+        github: "https://github.com/rpecuch/team-profile-generator",
+        tech: "Created using JavaScript, Node.js, HTML, Bootstrap, and Font Awesome."
+    }
+
+    const empDb = {
+        image: "emp-db.png",
+        alt: "employee database application",
+        link: "https://github.com/rpecuch/employee-database",
+        title: "Employee Database",
+        description: "A command-line application to allow the user to view and modify an employee database.",
+        github: "https://github.com/rpecuch/employee-database",
+        tech: "Created using JavaScript, Node.js, and MySQL."
     }
 
     return(
@@ -53,69 +94,16 @@ function Work () {
           <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
         </ol>
         <div class="carousel-inner">
           <Project image={kidsRx.image} alt={kidsRx.alt} link={kidsRx.link} title={kidsRx.title} description={kidsRx.description} github={kidsRx.github} tech={kidsRx.tech}/>
           <Project image={party.image} alt={party.alt} link={party.link} title={party.title} description={party.description} github={party.github} tech={party.tech}/>
           <Project image={quiz.image} alt={quiz.alt} link={quiz.link} title={quiz.title} description={quiz.description} github={quiz.github} tech={quiz.tech}/>
-          <div class="carousel-item">
-            <img src="./assets/images/work-scheduler.png" class="d-block w-100" alt="work day scheduler application">
-            <div class="carousel-caption d-none d-md-block text-dark custom-caption">
-                <a href="https://rpecuch.github.io/work-day-scheduler/" class="text-dark"><h5>Work Day Scheduler</h5></a>
-              <p>An application to create and save events for the work day.</p>
-              <p>Created using HTML, Bootstrap, custom CSS, JavaScript, jQuery, Moment.js, Font Awesome, and Google Fonts.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/weather.png" class="d-block w-100" alt="weather dashboard application">
-            <div class="carousel-caption d-none d-md-block text-dark">
-                <a href="https://rpecuch.github.io/weather-dashboard/" class="text-dark"><h5>Weather Dashboard</h5></a>
-              <p>An application to display the weather forecast for a city that is searched by the user.</p>
-              <p>Created using HTML, Bootstrap, custom CSS, JavaScript, Moment.js, Font Awesome, and Google Fonts.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/note-taker.png" class="d-block w-100" alt="note taker application">
-            <div class="carousel-caption d-none d-md-block text-dark">
-                <a href="https://express-note-taker-rp.herokuapp.com/" class="text-dark"><h5>Note Taker</h5></a>
-              <p>A full-stack application to allow the user to write, save, and delete notes.</p>
-              <p>Created using HTML, Bootstrap, custom CSS, JavaScript, Node.js, and Express.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/team-generator.png" class="d-block w-100" alt="team profile generator application">
-            <div class="carousel-caption d-none d-md-block text-dark">
-                <a href="https://github.com/rpecuch/team-profile-generator" class="text-dark"><h5>Team Profile Generator</h5></a>
-              <p>A command-line application to allow the user to generate an HTML document with information about a software engineering team.</p>
-              <p>Created using JavaScript, Node.js, HTML, Bootstrap, and Font Awesome.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/emp-db.png" class="d-block w-100" alt="employee database application">
-            <div class="carousel-caption d-none d-md-block text-dark">
-                <a href="https://github.com/rpecuch/employee-database" class="text-dark"><h5>Employee Database</h5></a>
-              <p>A command-line application to allow the user to view and modify an employee database.</p>
-              <p>Created using JavaScript, Node.js, and MySQL.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/password.png" class="d-block w-100" alt="password generator application">
-            <div class="carousel-caption d-none d-md-block text-dark">
-                <a href="https://rpecuch.github.io/password-generator/" class="text-dark"><h5>Password Generator</h5></a>
-              <p>An application that generates a password suggestion based on user-selected criteria.</p>
-              <p>Created using HTML, custom CSS, and JavaScript.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/prework-study-guide.png" class="d-block w-100" alt="password generator application">
-            <div class="carousel-caption d-none d-md-block text-dark custom-caption">
-                <a href="https://rpecuch.github.io/prework-study-guide/" class="text-dark"><h5>Prework Study Guide</h5></a>
-              <p>A platform with information and resources for students in the prework phase of a coding bootcamp.</p>
-              <p>Created using HTML, custom CSS, and JavaScript.</p>
-            </div>
-          </div>
+          <Project image={schedule.image} alt={schedule.alt} link={schedule.link} title={schedule.title} description={schedule.description} github={schedule.github} tech={schedule.tech}/>
+          <Project image={weather.image} alt={weather.alt} link={weather.link} title={weather.title} description={weather.description} github={weather.github} tech={weather.tech}/>
+          <Project image={note.image} alt={note.alt} link={note.link} title={note.title} description={note.description} github={note.github} tech={note.tech}/>
+          <Project image={team.image} alt={team.alt} link={team.link} title={team.title} description={team.description} github={team.github} tech={team.tech}/>
+          <Project image={empDb.image} alt={empDb.alt} link={empDb.link} title={empDb.title} description={empDb.description} github={empDb.github} tech={empDb.tech}/>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon custom-icon" aria-hidden="true"></span>
