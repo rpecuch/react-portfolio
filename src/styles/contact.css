@@ -1,0 +1,30 @@
+li {
+    list-style-type: none;
+}
+
+#email:hover {
+    text-decoration: underline;
+}
+
+.outer-container {
+    background: black;
+}
+
+.con-info {
+    margin-top: 5%;
+    color: white;
+}
+
+.con-card {
+    padding: 2%;
+    margin: 2%;
+    width: 500px;
+}
+
+form label {
+    margin-right: 2%;
+}
+
+form input {
+    display: block;
+}

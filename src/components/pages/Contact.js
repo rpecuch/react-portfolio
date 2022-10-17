@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-
+import '../../styles/contact.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+//TODO: maybe have a background image
 function Contact () {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -36,26 +39,44 @@ function Contact () {
         setMessage('');
     }
 
+    const styles = {
+        icon: {
+            marginRight: '1%'
+        },
+        a: {
+            textDecoration: 'none',
+            color: 'inherit'
+        }
+    }
+
     return(
-    <div class="jumbotron jumbotron-fluid custom-jumbo">
-        <div class="container text-center bg-light custom-container">
+    <div class="jumbotron jumbotron-fluid d-flex outer-container">
+        <div class="container text-center con-info">
           <h1 class="display-4">Contact Info</h1>
           <ul>
-            <li><i class="fa-solid fa-phone"></i>517-375-7765</li>
-            <li><i class="fa-solid fa-envelope"></i><a href="mailto:rpecuch@comcast.net">rpecuch@comcast.net</a></li>
+            <li><FontAwesomeIcon icon={faPhone} style={styles.icon}/>517-375-7765</li>
+            <li id="email"><FontAwesomeIcon icon={faEnvelope} style={styles.icon}/><a href="mailto:rpecuch@comcast.net" style={styles.a} >rpecuch@comcast.net</a></li>
           </ul>
         </div>
-        <form class="container text-center bg-light">
-            <h1>Contact Me</h1>
-            <label for="name">Name:</label>
-            <input value={name} name="name" onChange={inputChange} type="text"></input>
-            <label for="email">Email address:</label>
-            <input value={email} name="email" onChange={inputChange} type="email" placeholder="abc@test.com"></input>
-            <label for="message">Message:</label>
-            <textarea value={message} name="message" onChange={inputChange}></textarea>
+
+        <form class="card con-card">
+            <h5>Contact Me</h5>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input value={name} name="name" onChange={inputChange} type="text"></input>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input value={email} name="email" onChange={inputChange} type="email" placeholder="abc@test.com"></input>
+            </div>
+            <div class="form-group form-check">
+                <label for="message">Message:</label>
+                <textarea value={message} name="message" onChange={inputChange}></textarea>
+            </div>
             <button type="button" onClick={formSubmit}>Submit</button>
             <p>{confMessage}</p>
         </form>
+        
     </div>
     )
 }

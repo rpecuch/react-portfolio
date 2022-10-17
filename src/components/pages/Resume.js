@@ -1,5 +1,5 @@
 import React from "react";
-import ResumeDoc from "../../Documents/Resume.pdf";
+import ResumeDoc from "../../documents/Resume.pdf";
 import '../../styles/resume.css'
 
 //TODO: add more proficiencies
