@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../styles/home.css'
+import Headshot from '../../images/headshot.jpg'
 //TODO: upload image
 function Home () {
     return(
@@ -6,7 +8,7 @@ function Home () {
             <div class="container text-center bg-light custom-container">
                 <h1 class="display-4">Rita Pecuch</h1>
                 <p class="lead">Full-Stack Web Developer</p>
-                <img src="./assets/images/headshot.jpg" alt="headshot"/>
+                <img src={Headshot} alt="headshot"></img>
                 <p id="welcome">Welcome to my portfolio.</p>
                 <p>I am a full-stack developer with a biology and healthcare background.</p>
             </div>
