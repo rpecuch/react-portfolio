@@ -1,0 +1,13 @@
+.custom-ol {
+    background-color: black;
+    border-radius: 0 0 5px 5px;
+}
+
+.custom-icon {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.custom-caption {
+    opacity: 0.8;
+}
