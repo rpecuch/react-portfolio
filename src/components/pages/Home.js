@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/home.css'
 import Headshot from '../../images/headshot.jpg'
-//TODO: upload image
+//TODO: fix fonts
 function Home () {
     return(
         <div class="jumbotron jumbotron-fluid custom-jumbo">

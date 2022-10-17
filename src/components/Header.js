@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
-//TODO: use page variable to make the tab for current page stand out
+//TODO: make everything larger, responsive UI
 function Header({ page, changePage}) {
     const styles = {
         header: {
