@@ -24,7 +24,8 @@ function Contact () {
         if(!name || !email || !message) {
             setConfMessage('Fill out all required fields!');
         }
-        else if (!email.match(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/)) {
+        //TODO: fix this regex
+        else if (!email.match(/^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/)) {
             setConfMessage('Invalid email format!')
         }
         else {
