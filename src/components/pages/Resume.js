@@ -9,7 +9,7 @@ function Resume() {
     <div class="d-flex">
       <embed src={ResumeDoc} width="100%" height="1000px" />
       <div class="card cust-card">
-        <div class="card-header"><h3>Proficiencies</h3></div>
+        <div class="card-header" id="proficiencies"><h3>Proficiencies</h3></div>
         <h5 class="card-title">Programming Languages</h5>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">JavaScript</li>

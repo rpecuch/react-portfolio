@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Londrina+Solid:wght@300&family=Nunito:wght@300&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, nav, footer {
+    font-family: 'Londrina Solid', cursive
+}
+
+h1 {
+    font-size: 400%
+}
+
+h1, footer {
+    color: white;
+}
+
+nav a {
+    font-size: 300%
+}

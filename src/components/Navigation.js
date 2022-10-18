@@ -9,10 +9,12 @@ function Navigation({ page, changePage}) {
             justifyContent: 'space-between'
         },
         selected: {
-            fontStyle: 'oblique'
+            color: 'blue',
+            fontSize: '200%'
         },
         default: {
-            fontStyle: 'normal'
+            color: 'white',
+            fontSize: '200%'
         }
     }
 

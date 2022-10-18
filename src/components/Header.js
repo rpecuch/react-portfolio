@@ -5,7 +5,7 @@ import Navigation from './Navigation';
 function Header({ page, changePage}) {
     const styles = {
         header: {
-            background: '#d1d1e0',
+            background: 'grey',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',

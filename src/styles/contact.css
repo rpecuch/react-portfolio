@@ -14,15 +14,11 @@ li {
 
 .con-info {
     padding: 2%;
-    margin: 2%;
+    margin: 4%;
     color: black;
     background: white;
-}
-
-.con-card {
-    padding: 2%;
-    margin: 2%;
-    width: 500px;
+    width: 50%;
+    border-radius: 20px
 }
 
 form label {
@@ -31,4 +27,11 @@ form label {
 
 form input {
     display: block;
+}
+
+/* not working */
+@media screen and (max-width: 768px) {
+	.outer-container {
+        flex-direction: column
+    }
 }

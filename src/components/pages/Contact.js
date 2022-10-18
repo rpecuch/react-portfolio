@@ -59,21 +59,27 @@ function Contact () {
         a: {
             textDecoration: 'none',
             color: 'inherit'
+        },
+        heading: {
+            fontSize: '300%',
+            color: 'grey'
+        },
+        li: {
+            fontSize: '150%'
         }
     }
 
     return(
     <div class="d-flex outer-container">
         <div class="card text-center con-info">
-          <h1 class="display-4">Contact Info</h1>
+          <h2 style={styles.heading}>Contact Info</h2>
           <ul>
-            <li><FontAwesomeIcon icon={faPhone} style={styles.icon}/>517-375-7765</li>
-            <li id="email"><FontAwesomeIcon icon={faEnvelope} style={styles.icon}/><a href="mailto:rpecuch@comcast.net" style={styles.a} >rpecuch@comcast.net</a></li>
+            <li style={styles.li}><FontAwesomeIcon icon={faPhone} size='lg' style={styles.icon}/>517-375-7765</li>
+            <li id="email" style={styles.li}><FontAwesomeIcon icon={faEnvelope} size="lg" style={styles.icon}/><a href="mailto:rpecuch@comcast.net" style={styles.a} >rpecuch@comcast.net</a></li>
           </ul>
-        </div>
 
-        <form class="card con-card">
-            <h5>Contact Me</h5>
+          <form>
+            <h2 style={styles.heading}>Contact Me</h2>
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input value={contactName} name="name" onChange={inputChange} type="text"></input>
@@ -89,6 +95,7 @@ function Contact () {
             <button type="button" onClick={formSubmit}>Submit</button>
             <p>{confMessage}</p>
         </form>
+        </div>
         
     </div>
     )
