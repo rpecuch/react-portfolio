@@ -21,17 +21,6 @@ li {
     border-radius: 20px
 }
 
-form label {
-    margin-right: 2%;
-}
-
-form input {
-    display: block;
-}
-
-/* not working */
-@media screen and (max-width: 768px) {
-	.outer-container {
-        flex-direction: column
-    }
+form input, form textarea, form button {
+    margin-bottom: 2%
 }

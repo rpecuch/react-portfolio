@@ -81,19 +81,19 @@ function Contact () {
           <form>
             <h2 style={styles.heading}>Contact Me</h2>
             <div class="form-group">
-                <label for="name">Name:</label>
-                <input value={contactName} name="name" onChange={inputChange} type="text"></input>
+                <label for="name" style={styles.li}>Name:</label>
+                <input type="text" class="form-control" name="name" value={contactName} onChange={inputChange}/>
             </div>
             <div class="form-group">
-                <label for="email">Email address:</label>
-                <input value={email} name="email" onChange={inputChange} type="email" placeholder="abc@test.com"></input>
+                <label for="email" style={styles.li}>Email address:</label>
+                <input type="email" class="form-control" value={email} name="email" onChange={inputChange} placeholder="name@example.com"/>
             </div>
-            <div class="form-group form-check">
-                <label for="message">Message:</label>
-                <textarea value={message} name="message" onChange={inputChange}></textarea>
+            <div class="form-group">
+                <label for="message" style={styles.li}>Message:</label>
+                <textarea class="form-control" value={message} name="message" onChange={inputChange} rows="8"></textarea>
             </div>
             <button type="button" onClick={formSubmit}>Submit</button>
-            <p>{confMessage}</p>
+            <p style={styles.li}>{confMessage}</p>
         </form>
         </div>
         
