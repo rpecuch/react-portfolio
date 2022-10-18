@@ -15,7 +15,6 @@ import {
     MDBCarouselItem,
   } from 'mdb-react-ui-kit';
 
-//TODO: add newer projects
 function Work () {
     const kidsRx = {
         id: 1,

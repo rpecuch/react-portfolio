@@ -2,13 +2,12 @@ import React from "react";
 import ResumeDoc from "../../documents/Resume.pdf";
 import '../../styles/resume.css'
 
-//TODO: add more proficiencies
-//TODO: adjust stack order (responsive UI design), improve colors
+//TODO: adjust stack order (responsive UI design)
 function Resume() {
   return (
-    <div className="d-flex">
-      <embed src={ResumeDoc} width="100%" height="1000px" />
-      <div className="card cust-card">
+    <div className="d-flex row">
+      <embed src={ResumeDoc} width="100%" height="1000px" className="col-lg-9"/>
+      <div className="card cust-card col-lg-3">
         <div className="card-header" id="proficiencies"><h3>Proficiencies</h3></div>
         <h5 className="card-title">Programming Languages</h5>
         <ul className="list-group list-group-flush">
