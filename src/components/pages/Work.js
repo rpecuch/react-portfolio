@@ -14,7 +14,7 @@ import {
 } from 'mdb-react-ui-kit';
 
 //TODO: add newer projects
-//TODO: fix arrows
+//TODO: fix issue of first slide not loading on page load
 function Work () {
     const kidsRx = {
         id: 1,
@@ -25,7 +25,7 @@ function Work () {
         description: "A full-stack application that allows providers to keep track of patient records. Like other EMR systems, features include appointment scheduling, creating patient charts, writing medical record notes, logging vital signs, and logging vaccination records. What makes Kids RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind.",
         github: "https://github.com/rpecuch",
         tech: "Created using HTML, Tailwind CSS, Bootstrap, custom CSS, JavaScript, Node.js, Express, MySQL, Sequelize, Moment.js, Font Awesome, and Google Fonts. Note: this is a private repo.",
-        bClass: "light-caption"
+        bClass: "light-caption active"
     }
 
     const party = {
@@ -113,7 +113,7 @@ function Work () {
     }
 
     return(
-      <MDBCarousel showControls showIndicators dark fade>
+      <MDBCarousel showIndicators dark fade>
       <Project image={kidsRx.image} alt={kidsRx.alt} link={kidsRx.link} title={kidsRx.title} description={kidsRx.description} github={kidsRx.github} tech={kidsRx.tech} bClass={kidsRx.bClass}/>
       <Project image={party.image} alt={party.alt} link={party.link} title={party.title} description={party.description} github={party.github} tech={party.tech} bClass={party.bClass}/>
       <Project image={quiz.image} alt={quiz.alt} link={quiz.link} title={quiz.title} description={quiz.description} github={quiz.github} tech={quiz.tech} bClass={quiz.bClass}/>

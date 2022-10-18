@@ -12,6 +12,10 @@ span {
     background-color: black;
 } */
 
+.cust-item {
+    font-size: 400%
+}
+
 .light-caption {
     color: white;
     background: black;
