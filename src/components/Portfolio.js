@@ -7,7 +7,7 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
 export default function Portfolio() {
-    const [page, setPage] = useState('Home');
+    const [page, setPage] = useState('About');
 
     const displayPage = () => {
         if (page === 'About') {
