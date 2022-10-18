@@ -1,13 +1,30 @@
-.custom-ol {
+/* .custom-ol {
     background-color: black;
     border-radius: 0 0 5px 5px;
 }
 
-.custom-icon {
+button {
     background-color: black;
     border-radius: 5px;
 }
 
-.custom-caption {
+span {
+    background-color: black;
+} */
+
+.light-caption {
+    color: white;
+    background: black;
     opacity: 0.8;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.dark-caption {
+    color: black;
+    background: white;
+    opacity: 0.8;
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 10px;
 }
