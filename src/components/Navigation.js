@@ -9,7 +9,7 @@ function Navigation({ page, changePage}) {
             justifyContent: 'space-between'
         },
         selected: {
-            color: 'blue',
+            color: '#1D3557',
             fontSize: '200%'
         },
         default: {

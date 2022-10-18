@@ -6,7 +6,7 @@ import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-
 function Footer () {
     const styles = {
         footer: {
-            background: 'grey',
+            background: '#457B9D',
             display: 'flex',
             flexDirection: 'column',
             padding: '2%'
