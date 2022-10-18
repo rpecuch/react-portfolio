@@ -9,9 +9,6 @@ import weatherPic from '../../images/weather.png';
 import notePic from '../../images/note-taker.png';
 import teamPic from '../../images/team-generator.png';
 import empPic from '../../images/emp-db.png';
-// import {
-//   MDBCarousel
-// } from 'mdb-react-ui-kit';
 import {
     MDBCarousel,
     MDBCarouselItem,
@@ -27,7 +24,7 @@ function Work () {
         title: "Kids RX: Pediatric Electronic Medical Records",
         description: "A full-stack application that allows providers to keep track of patient records. Like other EMR systems, features include appointment scheduling, creating patient charts, writing medical record notes, logging vital signs, and logging vaccination records. What makes Kids RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind.",
         github: "https://github.com/rpecuch",
-        tech: "Created using HTML, Tailwind CSS, Bootstrap, custom CSS, JavaScript, Node.js, Express, MySQL, Sequelize, Moment.js, Font Awesome, and Google Fonts. Note: this is a private repo.",
+        tech: "Created using HTML, Tailwind CSS, Bootstrap, custom CSS, JavaScript, Node.js, Express, MySQL, Sequelize, and Moment.js. Note: this is a private repo.",
         bClass: "light-caption active"
     }
 
@@ -39,7 +36,7 @@ function Work () {
         title: "Virtual Party Mom",
         description: "A tool that generates activities for group gatherings based on the current weather conditions. In-app features include a joke generator, Cards Against Humanity, and Would You Rather?!",
         github: "https://github.com/rpecuch/virtual-party",
-        tech: "Created using HTML, Tailwind CSS, Bootstrap, custom CSS, JavaScript, jQuery, Moment.js, Font Awesome, and Google Fonts.",
+        tech: "Created using HTML, Tailwind CSS, Bootstrap, custom CSS, JavaScript, jQuery, and Moment.js.",
         bClass: "light-caption"
     }
 
@@ -63,7 +60,7 @@ function Work () {
         title: "Work Day Scheduler",
         description: "An application to create and save events for the work day.",
         github: "https://github.com/rpecuch/work-day-scheduler",
-        tech: "Created using HTML, Bootstrap, custom CSS, JavaScript, jQuery, Moment.js, Font Awesome, and Google Fonts.",
+        tech: "Created using HTML, Bootstrap, custom CSS, JavaScript, jQuery, and Moment.js.",
         bClass: "light-caption"
     }
 
@@ -75,7 +72,7 @@ function Work () {
         title: "Weather Dashboard",
         description: "An application to display the weather forecast for a city that is searched by the user",
         github: "https://github.com/rpecuch/weather-dashboard",
-        tech: "Created using HTML, Bootstrap, custom CSS, JavaScript, Moment.js, Font Awesome, and Google Fonts.",
+        tech: "Created using HTML, Bootstrap, custom CSS, JavaScript, and Moment.js.",
         bClass: "light-caption"
     }
 
@@ -99,7 +96,7 @@ function Work () {
         title: "Team Profile Generator",
         description: "A command-line application to allow the user to generate an HTML document with information about a software engineering team.",
         github: "https://github.com/rpecuch/team-profile-generator",
-        tech: "Created using JavaScript, Node.js, HTML, Bootstrap, and Font Awesome.",
+        tech: "Created using JavaScript, Node.js, HTML, and Bootstrap.",
         bClass: "dark-caption"
     }
 

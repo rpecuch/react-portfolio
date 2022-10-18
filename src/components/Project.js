@@ -16,8 +16,8 @@ function Project ({link, title, description, github, tech, bClass}) {
    <div className={bClass} style={styles.text}>
       <a href={link}><h5 style={styles.header}>{title}</h5></a>
       <a href={github}><FontAwesomeIcon icon={faGithub} size='2xl'/></a>
-      <p id="desc">{description}</p>
-      <p>{tech}</p>
+      <p id="desc" className='d-none d-lg-block'>{description}</p>
+      <p className='d-none d-lg-block'>{tech}</p>
    </div>
  )
 }
