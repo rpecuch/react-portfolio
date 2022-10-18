@@ -7,12 +7,16 @@ li {
 }
 
 .outer-container {
-    background: black;
+    background-image: url("coding.jpeg");
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .con-info {
-    margin-top: 5%;
-    color: white;
+    padding: 2%;
+    margin: 2%;
+    color: black;
+    background: white;
 }
 
 .con-card {

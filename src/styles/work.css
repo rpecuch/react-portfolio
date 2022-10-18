@@ -28,3 +28,7 @@ span {
     border: 2px solid black;
     border-radius: 10px;
 }
+
+#desc {
+    margin-top: 2%;
+}

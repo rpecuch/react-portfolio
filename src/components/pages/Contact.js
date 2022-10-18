@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 //TODO: maybe have a background image
 function Contact () {
-    const [name, setName] = useState('');
+    const [contactName, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [confMessage, setConfMessage] = useState('');
@@ -13,18 +13,31 @@ function Contact () {
         const { name, value } = e.target;
         if (name === 'name') {
             setName(value);
+            setConfMessage('');
         }
         else if (name === 'email') {
             setEmail(value);
+            setConfMessage('');
         }
         else {
             setMessage(value);
+            setConfMessage('');
+        }
+
+        if (!contactName) {
+            setConfMessage('Name is required')
+        }
+        if (!email) {
+            setConfMessage('Email is required')
+        }
+        if (!message) {
+            setConfMessage('Message is required')
         }
     }
 
     const formSubmit = (e) => {
         e.preventDefault();
-        if(!name || !email || !message) {
+        if(!contactName || !email || !message) {
             setConfMessage('Fill out all required fields!');
         }
         //TODO: fix this regex
@@ -32,11 +45,11 @@ function Contact () {
             setConfMessage('Invalid email format!')
         }
         else {
-            setConfMessage('Message received!')
+            setConfMessage('Message received!');
+            setName('');
+            setEmail('');
+            setMessage('');
         }
-        setName('');
-        setEmail('');
-        setMessage('');
     }
 
     const styles = {
@@ -50,8 +63,8 @@ function Contact () {
     }
 
     return(
-    <div class="jumbotron jumbotron-fluid d-flex outer-container">
-        <div class="container text-center con-info">
+    <div class="d-flex outer-container">
+        <div class="card text-center con-info">
           <h1 class="display-4">Contact Info</h1>
           <ul>
             <li><FontAwesomeIcon icon={faPhone} style={styles.icon}/>517-375-7765</li>
@@ -63,7 +76,7 @@ function Contact () {
             <h5>Contact Me</h5>
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input value={name} name="name" onChange={inputChange} type="text"></input>
+                <input value={contactName} name="name" onChange={inputChange} type="text"></input>
             </div>
             <div class="form-group">
                 <label for="email">Email address:</label>
