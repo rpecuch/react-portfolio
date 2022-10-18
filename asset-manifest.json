@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.1a0ae3b4.css",
+    "main.js": "/react-portfolio/static/js/main.667fad04.js",
+    "static/media/med-software.png": "/react-portfolio/static/media/med-software.3093dc30ee14b325197a.png",
+    "static/media/headshot.jpg": "/react-portfolio/static/media/headshot.c131cac498b2ade2270f.jpg",
+    "static/media/social.png": "/react-portfolio/static/media/social.1c8468a95b851ea73c11.png",
+    "static/media/team-generator.png": "/react-portfolio/static/media/team-generator.0ba0266158cdbcc58f04.png",
+    "static/media/virtual-party.png": "/react-portfolio/static/media/virtual-party.31b7a409f296ae3a45cd.png",
+    "static/media/kids-rx.png": "/react-portfolio/static/media/kids-rx.a257da583ac3c3c08691.png",
+    "static/media/emp-db.png": "/react-portfolio/static/media/emp-db.2b2a107b205f2cd39807.png",
+    "static/media/weather.png": "/react-portfolio/static/media/weather.08e413c9b9d73f187be3.png",
+    "static/media/coding.jpeg": "/react-portfolio/static/media/coding.803d87afa386852f43c5.jpeg",
+    "static/media/work-scheduler.png": "/react-portfolio/static/media/work-scheduler.5ccb8f80de08c418d8b4.png",
+    "static/media/js-quiz.png": "/react-portfolio/static/media/js-quiz.ad4ba8c42748570c2062.png",
+    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.2e44a508317b469cd0b0.pdf",
+    "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.93143d289be7840516a8.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.1a0ae3b4.css.map": "/react-portfolio/static/css/main.1a0ae3b4.css.map",
+    "main.667fad04.js.map": "/react-portfolio/static/js/main.667fad04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a0ae3b4.css",
+    "static/js/main.667fad04.js"
+  ]
+}
