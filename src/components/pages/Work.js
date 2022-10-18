@@ -9,12 +9,15 @@ import weatherPic from '../../images/weather.png';
 import notePic from '../../images/note-taker.png';
 import teamPic from '../../images/team-generator.png';
 import empPic from '../../images/emp-db.png';
+// import {
+//   MDBCarousel
+// } from 'mdb-react-ui-kit';
 import {
-  MDBCarousel
-} from 'mdb-react-ui-kit';
+    MDBCarousel,
+    MDBCarouselItem,
+  } from 'mdb-react-ui-kit';
 
 //TODO: add newer projects
-//TODO: fix issue of first slide not loading on page load
 function Work () {
     const kidsRx = {
         id: 1,
@@ -113,16 +116,89 @@ function Work () {
     }
 
     return(
-      <MDBCarousel showIndicators dark fade>
-      <Project image={kidsRx.image} alt={kidsRx.alt} link={kidsRx.link} title={kidsRx.title} description={kidsRx.description} github={kidsRx.github} tech={kidsRx.tech} bClass={kidsRx.bClass}/>
-      <Project image={party.image} alt={party.alt} link={party.link} title={party.title} description={party.description} github={party.github} tech={party.tech} bClass={party.bClass}/>
-      <Project image={quiz.image} alt={quiz.alt} link={quiz.link} title={quiz.title} description={quiz.description} github={quiz.github} tech={quiz.tech} bClass={quiz.bClass}/>
-      <Project image={schedule.image} alt={schedule.alt} link={schedule.link} title={schedule.title} description={schedule.description} github={schedule.github} tech={schedule.tech} bClass={schedule.bClass}/>
-      <Project image={weather.image} alt={weather.alt} link={weather.link} title={weather.title} description={weather.description} github={weather.github} tech={weather.tech} bClass={weather.bClass}/>
-      <Project image={note.image} alt={note.alt} link={note.link} title={note.title} description={note.description} github={note.github} tech={note.tech} bClass={note.bClass}/>
-      <Project image={team.image} alt={team.alt} link={team.link} title={team.title} description={team.description} github={team.github} tech={team.tech} bClass={team.bClass}/>
-      <Project image={empDb.image} alt={empDb.alt} link={empDb.link} title={empDb.title} description={empDb.description} github={empDb.github} tech={empDb.tech} bClass={empDb.bClass}/>
+    <MDBCarousel showIndicators dark fade>
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={1}
+        src={kidsRx.image}
+        alt={kidsRx.alt}
+      >
+        <Project bClass={kidsRx.bClass} link={kidsRx.link} title={kidsRx.title} github={kidsRx.github} description={kidsRx.description} tech={kidsRx.tech}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={2}
+        src={party.image}
+        alt={party.alt}
+      >
+        <Project link={party.link} title={party.title} description={party.description} github={party.github} tech={party.tech} bClass={party.bClass}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={3}
+        src={quiz.image}
+        alt={quiz.alt}
+      >
+        <Project link={quiz.link} title={quiz.title} description={quiz.description} github={quiz.github} tech={quiz.tech} bClass={quiz.bClass}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={4}
+        src={schedule.image}
+        alt={schedule.alt}
+      >
+        <Project link={schedule.link} title={schedule.title} description={schedule.description} github={schedule.github} tech={schedule.tech} bClass={schedule.bClass}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={5}
+        src={weather.image}
+        alt={weather.alt}
+      >
+        <Project link={weather.link} title={weather.title} description={weather.description} github={weather.github} tech={weather.tech} bClass={weather.bClass}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={6}
+        src={note.image}
+        alt={note.alt}
+      >
+        <Project link={note.link} title={note.title} description={note.description} github={note.github} tech={note.tech} bClass={note.bClass}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={7}
+        src={team.image}
+        alt={team.alt}
+      >
+        <Project link={team.link} title={team.title} description={team.description} github={team.github} tech={team.tech} bClass={team.bClass}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={8}
+        src={empDb.image}
+        alt={empDb.alt}
+      >
+        <Project link={empDb.link} title={empDb.title} description={empDb.description} github={empDb.github} tech={empDb.tech} bClass={empDb.bClass}/>
+      </MDBCarouselItem>
     </MDBCarousel>
+    //   <MDBCarousel showIndicators dark fade>
+    //   <Project image={kidsRx.image} alt={kidsRx.alt} link={kidsRx.link} title={kidsRx.title} description={kidsRx.description} github={kidsRx.github} tech={kidsRx.tech} bClass={kidsRx.bClass}/>
+    //   <Project link={party.link} title={party.title} description={party.description} github={party.github} tech={party.tech} bClass={party.bClass}/>
+    //   <Project link={quiz.link} title={quiz.title} description={quiz.description} github={quiz.github} tech={quiz.tech} bClass={quiz.bClass}/>
+    //   <Project link={schedule.link} title={schedule.title} description={schedule.description} github={schedule.github} tech={schedule.tech} bClass={schedule.bClass}/>
+    //   <Project link={weather.link} title={weather.title} description={weather.description} github={weather.github} tech={weather.tech} bClass={weather.bClass}/>
+    //   <Project link={note.link} title={note.title} description={note.description} github={note.github} tech={note.tech} bClass={note.bClass}/>
+    //   <Project link={team.link} title={team.title} description={team.description} github={team.github} tech={team.tech} bClass={team.bClass}/>
+    //   <Project link={empDb.link} title={empDb.title} description={empDb.description} github={empDb.github} tech={empDb.tech} bClass={empDb.bClass}/>
+    // </MDBCarousel>
     )
 }
 

@@ -15,7 +15,7 @@ function Header({ page, changePage}) {
     return(
         <header style={styles.header}>
             <div>
-                <h1 class="text-center">Rita Pecuch</h1>
+                <h1 className="text-center">Rita Pecuch</h1>
             </div>
             <Navigation page={page} changePage={changePage}/>
         </header>

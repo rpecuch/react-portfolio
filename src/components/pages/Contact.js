@@ -70,8 +70,8 @@ function Contact () {
     }
 
     return(
-    <div class="d-flex outer-container">
-        <div class="card text-center con-info">
+    <div className="d-flex outer-container">
+        <div className="card text-center con-info">
           <h2 style={styles.heading}>Contact Info</h2>
           <ul>
             <li style={styles.li}><FontAwesomeIcon icon={faPhone} size='lg' style={styles.icon}/>517-375-7765</li>
@@ -80,17 +80,17 @@ function Contact () {
 
           <form>
             <h2 style={styles.heading}>Contact Me</h2>
-            <div class="form-group">
-                <label for="name" style={styles.li}>Name:</label>
-                <input type="text" class="form-control" name="name" value={contactName} onChange={inputChange}/>
+            <div className="form-group">
+                <label htmlFor="name" style={styles.li}>Name:</label>
+                <input type="text" className="form-control" name="name" value={contactName} onChange={inputChange}/>
             </div>
-            <div class="form-group">
-                <label for="email" style={styles.li}>Email address:</label>
-                <input type="email" class="form-control" value={email} name="email" onChange={inputChange} placeholder="name@example.com"/>
+            <div className="form-group">
+                <label htmlFor="email" style={styles.li}>Email address:</label>
+                <input type="email" className="form-control" value={email} name="email" onChange={inputChange} placeholder="name@example.com"/>
             </div>
-            <div class="form-group">
-                <label for="message" style={styles.li}>Message:</label>
-                <textarea class="form-control" value={message} name="message" onChange={inputChange} rows="8"></textarea>
+            <div className="form-group">
+                <label htmlFor="message" style={styles.li}>Message:</label>
+                <textarea className="form-control" value={message} name="message" onChange={inputChange} rows="8"></textarea>
             </div>
             <button type="button" onClick={formSubmit}>Submit</button>
             <p style={styles.li}>{confMessage}</p>
