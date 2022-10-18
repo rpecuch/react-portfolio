@@ -9,6 +9,7 @@ import weatherPic from '../../images/weather.png';
 import notePic from '../../images/note-taker.png';
 import teamPic from '../../images/team-generator.png';
 import empPic from '../../images/emp-db.png';
+import socPic from '../../images/social.png';
 import {
     MDBCarousel,
     MDBCarouselItem,
@@ -112,6 +113,18 @@ function Work () {
         bClass: "dark-caption"
     }
 
+    const social = {
+        id: 9,
+        image: socPic,
+        alt: "social network API application",
+        link: "https://drive.google.com/file/d/17ZiS_yYyw-0rKjcU9Sc0vl-hjvFAd6MH/view",
+        title: "Social Network API",
+        description: "A back-end application to allow the user to view and modify a social network database. Contains the following capabilities: view users, view single user, edit user, create user, remove user, add friend, remove friend, view posts, view single post, edit post, create post, delete post, add comment, and remove comment.",
+        github: "https://github.com/rpecuch/social-network-api",
+        tech: "Created using JavaScript, Node.js, MongoDB, and Mongoose.",
+        bClass: "dark-caption"
+    }
+
     return(
     <MDBCarousel showIndicators dark fade>
       <MDBCarouselItem
@@ -179,6 +192,15 @@ function Work () {
 
       <MDBCarouselItem
         className='w-100 d-block'
+        itemId={9}
+        src={social.image}
+        alt={social.alt}
+      >
+        <Project link={social.link} title={social.title} description={social.description} github={social.github} tech={social.tech} bClass={social.bClass}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
         itemId={8}
         src={empDb.image}
         alt={empDb.alt}
@@ -186,16 +208,6 @@ function Work () {
         <Project link={empDb.link} title={empDb.title} description={empDb.description} github={empDb.github} tech={empDb.tech} bClass={empDb.bClass}/>
       </MDBCarouselItem>
     </MDBCarousel>
-    //   <MDBCarousel showIndicators dark fade>
-    //   <Project image={kidsRx.image} alt={kidsRx.alt} link={kidsRx.link} title={kidsRx.title} description={kidsRx.description} github={kidsRx.github} tech={kidsRx.tech} bClass={kidsRx.bClass}/>
-    //   <Project link={party.link} title={party.title} description={party.description} github={party.github} tech={party.tech} bClass={party.bClass}/>
-    //   <Project link={quiz.link} title={quiz.title} description={quiz.description} github={quiz.github} tech={quiz.tech} bClass={quiz.bClass}/>
-    //   <Project link={schedule.link} title={schedule.title} description={schedule.description} github={schedule.github} tech={schedule.tech} bClass={schedule.bClass}/>
-    //   <Project link={weather.link} title={weather.title} description={weather.description} github={weather.github} tech={weather.tech} bClass={weather.bClass}/>
-    //   <Project link={note.link} title={note.title} description={note.description} github={note.github} tech={note.tech} bClass={note.bClass}/>
-    //   <Project link={team.link} title={team.title} description={team.description} github={team.github} tech={team.tech} bClass={team.bClass}/>
-    //   <Project link={empDb.link} title={empDb.title} description={empDb.description} github={empDb.github} tech={empDb.tech} bClass={empDb.bClass}/>
-    // </MDBCarousel>
     )
 }
 
