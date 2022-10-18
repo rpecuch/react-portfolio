@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
+//import stylesheet
 import '../../styles/contact.css';
+//import font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-//TODO: maybe have a background image
+
 function Contact () {
     const [contactName, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [confMessage, setConfMessage] = useState('');
-
+    //runs whenever input in any of the form input areas changes
     const inputChange = (e) => {
+        //extract e.target.name and e.target.value
         const { name, value } = e.target;
+        //set value of state variable that corresponds with the input field that was edited
         if (name === 'name') {
             setName(value);
             setConfMessage('');
@@ -23,7 +27,7 @@ function Contact () {
             setMessage(value);
             setConfMessage('');
         }
-
+        //displays message if an input field is left blank
         if (!contactName) {
             setConfMessage('Name is required')
         }
@@ -34,16 +38,18 @@ function Contact () {
             setConfMessage('Message is required')
         }
     }
-
+    //runs when submit button is clicked
     const formSubmit = (e) => {
         e.preventDefault();
+        //displays message if any field is left blank
         if(!contactName || !email || !message) {
             setConfMessage('Fill out all required fields!');
         }
-        //TODO: fix this regex
+        //displays message if email is not in correct format
         else if (!email.match(/^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/)) {
             setConfMessage('Invalid email format!')
         }
+        //success message displayed and clears input fields
         else {
             setConfMessage('Message received!');
             setName('');
@@ -51,7 +57,7 @@ function Contact () {
             setMessage('');
         }
     }
-
+    //define custom styles (in addition to stylesheet)
     const styles = {
         icon: {
             marginRight: '1%'
@@ -68,7 +74,8 @@ function Contact () {
             fontSize: '150%'
         }
     }
-
+    //renders Contact page using styling and icons
+    //utilizes inputChange and formSubmit functions defined above
     return(
     <div className="d-flex outer-container">
         <div className="card text-center con-info">
@@ -92,8 +99,8 @@ function Contact () {
                 <label htmlFor="message" style={styles.li}>Message:</label>
                 <textarea className="form-control" value={message} name="message" onChange={inputChange} rows="8"></textarea>
             </div>
-            <button type="button" onClick={formSubmit}>Submit</button>
             <p style={styles.li}>{confMessage}</p>
+            <button type="button" onClick={formSubmit}>Submit</button>
         </form>
         </div>
         

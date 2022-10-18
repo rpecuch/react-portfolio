@@ -1,6 +1,9 @@
 import React from 'react';
+//import necessary component
 import Project from '../Project';
+//import stylesheet
 import '../../styles/work.css'
+//import images
 import kidsPic from '../../images/kids-rx.png';
 import partyPic from '../../images/virtual-party.png';
 import quizPic from '../../images/js-quiz.png';
@@ -10,12 +13,14 @@ import notePic from '../../images/note-taker.png';
 import teamPic from '../../images/team-generator.png';
 import empPic from '../../images/emp-db.png';
 import socPic from '../../images/social.png';
+//import carousel components
 import {
     MDBCarousel,
     MDBCarouselItem,
   } from 'mdb-react-ui-kit';
 
 function Work () {
+    //store project info in objects to allow passing data to project component (then display project component multiple times with different inputs --> displays different projects)
     const kidsRx = {
         id: 1,
         image: kidsPic,
@@ -123,7 +128,7 @@ function Work () {
         tech: "Created using JavaScript, Node.js, MongoDB, and Mongoose.",
         bClass: "dark-caption"
     }
-
+    //displays Work Samples page using a carousel of project components
     return(
     <MDBCarousel showIndicators dark fade>
       <MDBCarouselItem

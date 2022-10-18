@@ -1,21 +1,7 @@
-/* .custom-ol {
-    background-color: black;
-    border-radius: 0 0 5px 5px;
-}
-
-button {
-    background-color: black;
-    border-radius: 5px;
-}
-
-span {
-    background-color: black;
-} */
-
 .cust-item {
     font-size: 400%
 }
-
+/* styles captions differently depending on assigned class */
 .light-caption {
     color: white;
     background: black;
@@ -23,7 +9,6 @@ span {
     padding: 2%;
     border-radius: 10px;
 }
-
 .dark-caption {
     color: black;
     background: white;

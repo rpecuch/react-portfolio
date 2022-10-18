@@ -5,7 +5,7 @@ li {
 #email:hover {
     text-decoration: underline;
 }
-
+/* use background image */
 .outer-container {
     background-image: url("coding.jpeg");
     display: flex;
@@ -16,11 +16,15 @@ li {
     padding: 2%;
     margin: 4%;
     color: black;
-    background: white;
     width: 50%;
-    border-radius: 20px
+    border-radius: 20px;
+}
+/* gives spacing */
+form input, form textarea, form button {
+    margin-bottom: 2%;
 }
 
-form input, form textarea, form button {
-    margin-bottom: 2%
+form button {
+    border-radius: 10px;
+    padding: 1%;
 }

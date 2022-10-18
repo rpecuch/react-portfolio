@@ -1,8 +1,9 @@
 import React from 'react';
+//import navbar component
 import Navigation from './Navigation';
 
-//TODO: make everything larger, responsive UI
 function Header({ page, changePage}) {
+    //define custom styles
     const styles = {
         header: {
             background: '#457B9D',
@@ -12,6 +13,7 @@ function Header({ page, changePage}) {
             padding: '2%'
         }
     }
+    //renders header using custom styles
     return(
         <header style={styles.header}>
             <div>

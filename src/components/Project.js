@@ -1,9 +1,12 @@
 import React from 'react';
+//import stylesheet
 import '../styles/work.css';
+//import font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Project ({link, title, description, github, tech, bClass}) {
+   //define font size styling 
    const styles = {
       text: {
          fontSize: '150%'
@@ -12,6 +15,7 @@ function Project ({link, title, description, github, tech, bClass}) {
          fontSize: '200%'
       }
    }
+//renders project component using styles and font awesome icons
  return(
    <div className={bClass} style={styles.text}>
       <a href={link}><h5 style={styles.header}>{title}</h5></a>

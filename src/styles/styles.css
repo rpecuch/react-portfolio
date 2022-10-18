@@ -1,5 +1,6 @@
+/* import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Londrina+Solid:wght@300&family=Nunito:wght@300&display=swap');
-
+/* apply fonts to specific components */
 body {
     font-family: 'Nunito', sans-serif;
 }
@@ -7,7 +8,7 @@ body {
 h1, nav, footer {
     font-family: 'Londrina Solid', cursive
 }
-
+/* font styling for header and footer */
 h1 {
     font-size: 400%
 }

@@ -1,9 +1,10 @@
 import React from 'react';
+//import font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 
-//TODO: make everything larger, responsive UI
 function Footer () {
+    //define custom styles
     const styles = {
         footer: {
             background: '#457B9D',
@@ -25,7 +26,7 @@ function Footer () {
         }
 
     }
-
+    //renders footer utilizing font awesome icons and custom styles
     return(
         <footer style={styles.footer}>
             <p className="text-center" style={styles.p}>Thank you for visiting!</p>

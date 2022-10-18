@@ -1,8 +1,11 @@
 import React from 'react';
+//import stylesheet
 import '../../styles/about.css'
+//import headshot image
 import Headshot from '../../images/headshot.jpg';
 
 function About() {
+    //renders About Me page using styling and imported image
     return(
         <div className="jumbotron jumbotron-fluid cust-jumbo">
             <div className="container text-center bg-light custom-container">

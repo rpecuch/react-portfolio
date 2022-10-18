@@ -1,9 +1,11 @@
 import React from "react";
+//import pdf document
 import ResumeDoc from "../../documents/Resume.pdf";
+//import stylesheet
 import '../../styles/resume.css'
 
-//TODO: adjust stack order (responsive UI design)
 function Resume() {
+  //renders Resume page using styling and imported document
   return (
     <div className="d-flex row">
       <embed src={ResumeDoc} width="100%" height="1000px" className="col-lg-9"/>

@@ -1,7 +1,7 @@
 import React from 'react';
 
-
 function Navigation({ page, changePage}) {
+    //define custom styles
     const styles = {
         nav: {
             display: 'flex',
@@ -17,7 +17,9 @@ function Navigation({ page, changePage}) {
             fontSize: '200%'
         }
     }
-
+    //renders navbar using custom styles
+    //changes value of the page state variable when a nav link is clicked
+    //ternary operator changes styling of a nav link if it corresponds with value of page state variable
     return (
         <nav style={styles.nav}>
                 <a className="navbar-brand" href="#about" onClick={() => changePage('About')} style={page === 'About' ? styles.selected : styles.default}>About</a>
