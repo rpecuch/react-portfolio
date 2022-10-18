@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
 import Resume from './pages/Resume';
@@ -11,9 +10,6 @@ export default function Portfolio() {
     const [page, setPage] = useState('Home');
 
     const displayPage = () => {
-        if(page === 'Home') {
-            return <Home />;
-        }
         if (page === 'About') {
             return <About />
         }
