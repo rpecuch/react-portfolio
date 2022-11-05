@@ -1,5 +1,12 @@
 # Professional Portfolio
 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
 ## Description
 
 The purpose of this project was to build a professional portfolio that I can use to showcase my work to potential employers. This will allow hiring managers to view all of my information, work samples, and contact information in one place. While building this project, I gained experience using React and React libraries. This portfolio will continue to be updated as I learn new skills and deploy more applications.
