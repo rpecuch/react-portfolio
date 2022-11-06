@@ -5,6 +5,7 @@ import Project from '../Project';
 import '../../styles/work.css'
 //import images
 import kidsPic from '../../images/kids-rx.png';
+import mykidsPic from '../../images/my-kids-rx.png';
 import partyPic from '../../images/virtual-party.png';
 import quizPic from '../../images/js-quiz.png';
 import schedulePic from '../../images/work-scheduler.png';
@@ -26,11 +27,23 @@ function Work () {
         image: kidsPic,
         alt: 'kids rx application',
         link: "https://kids-rx-emr.herokuapp.com/",
-        title: "Kids RX: Pediatric Electronic Medical Records",
-        description: "A full-stack application that allows providers to keep track of patient records. Like other EMR systems, features include appointment scheduling, creating patient charts, writing medical record notes, logging vital signs, and logging vaccination records. What makes Kids RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind.",
-        github: "https://github.com/rpecuch",
-        tech: "Created using HTML, Tailwind CSS, Bootstrap, custom CSS, JavaScript, Node.js, Express, MySQL, Sequelize, and Moment.js. Note: this is a private repo.",
+        title: "Kids RX: Pediatric Electronic Health Records",
+        description: "A full-stack application that allows providers to keep track of patient records. Like other EHR systems, features include appointment scheduling, creating patient charts, writing medical record notes, logging vital signs, and logging vaccination records. What makes Kids RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind.",
+        github: "https://github.com/rpecuch/kids-rx-info",
+        tech: "Created using HTML, Tailwind CSS, Bootstrap, custom CSS, JavaScript, Node.js, Express, MySQL, Sequelize, and Moment.js.",
         bClass: "light-caption active"
+    }
+
+    const myKidsRx = {
+      id: 2,
+      image: mykidsPic,
+      link: "http://my-kids-rx.herokuapp.com/",
+      alt: 'my kids rx application',
+      title: "My Kids RX: Pediatric Patient Portal",
+      description: "A full-stack application that allows the parents of pediatric patients to view health records online. Like other EHR patient portals, features include viewing upcoming and past appointments, medications, vaccines, and vital signs. Patients can also send and recive messages from their physician. What makes My Kids RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind, including games for them to play while in a waiting room.",
+      github: "https://github.com/rpecuch/kids-rx-info",
+      tech: "Created using React, MUI, custom CSS, JavaScript, Node.js, Express, MongoDB, Mongoose, Apollo GraphQL, and Moment.js.",
+      bClass: "light-caption active"
     }
 
     const party = {
@@ -143,6 +156,15 @@ function Work () {
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={2}
+        src={myKidsRx.image}
+        alt={myKidsRx.alt}
+      >
+        <Project bClass={myKidsRx.bClass} link={myKidsRx.link} title={myKidsRx.title} github={myKidsRx.github} description={myKidsRx.description} tech={myKidsRx.tech}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={3}
         src={party.image}
         alt={party.alt}
       >
@@ -151,7 +173,7 @@ function Work () {
 
       <MDBCarouselItem
         className='w-100 d-block'
-        itemId={3}
+        itemId={4}
         src={quiz.image}
         alt={quiz.alt}
       >
@@ -160,7 +182,7 @@ function Work () {
 
       <MDBCarouselItem
         className='w-100 d-block'
-        itemId={4}
+        itemId={5}
         src={schedule.image}
         alt={schedule.alt}
       >
@@ -169,7 +191,7 @@ function Work () {
 
       <MDBCarouselItem
         className='w-100 d-block'
-        itemId={5}
+        itemId={6}
         src={weather.image}
         alt={weather.alt}
       >
@@ -178,7 +200,7 @@ function Work () {
 
       <MDBCarouselItem
         className='w-100 d-block'
-        itemId={6}
+        itemId={7}
         src={note.image}
         alt={note.alt}
       >
@@ -187,7 +209,7 @@ function Work () {
 
       <MDBCarouselItem
         className='w-100 d-block'
-        itemId={7}
+        itemId={8}
         src={team.image}
         alt={team.alt}
       >
@@ -205,7 +227,7 @@ function Work () {
 
       <MDBCarouselItem
         className='w-100 d-block'
-        itemId={8}
+        itemId={10}
         src={empDb.image}
         alt={empDb.alt}
       >
