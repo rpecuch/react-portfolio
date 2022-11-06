@@ -67,7 +67,7 @@ function Work () {
         description: "An interactive timed quiz about JavaScript concepts.",
         github: "https://github.com/rpecuch/javascript-quiz",
         tech: "Created using HTML, custom CSS, and JavaScript.",
-        bClass: "light-caption"
+        bClass: "dark-caption"
     }
 
     const schedule = {
