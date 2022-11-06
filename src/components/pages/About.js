@@ -11,7 +11,7 @@ function About() {
             <div className="container text-center bg-light custom-container">
                 <h2 className="display-4">About</h2>
                 <img src={Headshot} alt="headshot"></img>
-                <p id="bio">I am a full-stack developer currently enrolled in the full-time bootcamp at Rutgers University! I come from an extensive background of biology and healthcare. I graduated from Oakland University with a B.S. in Biomedical Science in May 2021, and worked in clinical medicine for four years. I am interested in creating applications for use in healthcare or STEM! I am very knowledgeable in both the healthcare and biological research industries.</p>
+                <p id="bio">I am a full-stack developer that completed the full-time bootcamp at Rutgers University! I come from an extensive background of biology and healthcare. I graduated from Oakland University with a B.S. in Biomedical Science in May 2021, and worked in clinical medicine for four years. I am interested in creating applications for use in healthcare or STEM! I am very knowledgeable in both the healthcare and biological research industries.</p>
             </div>
         </div>
     )
