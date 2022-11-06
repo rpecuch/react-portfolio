@@ -2,7 +2,9 @@ li {
     list-style-type: none;
 }
 
-#email:hover {
+#email:hover,
+#linkedin:hover,
+#github:hover {
     text-decoration: underline;
 }
 /* use background image */
