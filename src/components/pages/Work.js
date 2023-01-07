@@ -26,7 +26,7 @@ function Work () {
         id: 1,
         image: kidsPic,
         alt: 'kids rx application',
-        link: "https://kids-rx-emr.herokuapp.com/",
+        link: "https://kidsrx-provider.herokuapp.com/",
         title: "Kids RX: Pediatric Electronic Health Records",
         description: "A full-stack application that allows providers to keep track of patient records. Like other EHR systems, features include appointment scheduling, creating patient charts, writing medical record notes, logging vital signs, and logging vaccination records. What makes Kids RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind.",
         github: "https://github.com/rpecuch/kids-rx-info",
@@ -37,7 +37,7 @@ function Work () {
     const myKidsRx = {
       id: 2,
       image: mykidsPic,
-      link: "http://my-kids-rx.herokuapp.com/",
+      link: "https://kidsrx-patient.herokuapp.com/",
       alt: 'my kids rx application',
       title: "My Kids RX: Pediatric Patient Portal",
       description: "A full-stack application that allows the parents of pediatric patients to view health records online. Like other EHR patient portals, features include viewing upcoming and past appointments, medications, vaccines, and vital signs. Patients can also send and recive messages from their physician. What makes My Kids RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind, including games for them to play while in a waiting room.",
