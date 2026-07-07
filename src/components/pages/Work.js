@@ -26,27 +26,26 @@ function Work () {
         id: 1,
         image: kidsPic,
         alt: 'kids rx application',
-        // TODO: fix once app deployed (currently waiting for free credits for MongoDB)
-        link: "https://kidsrx-provider.herokuapp.com/",
+        link: "https://kids-rx-ehr.onrender.com/",
         title: "Kids RX: Pediatric Electronic Health Records",
-        description: "A full-stack application that allows providers to keep track of patient records. Like other EHR systems, features include appointment scheduling, creating patient charts, writing medical record notes, logging vital signs, and logging vaccination records. What makes Kids RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind.",
+        description: "Like other electronic health record (EHR) systems, features include appointment scheduling, creating patient charts, writing medical record notes, logging vital signs, and logging vaccination records. Patients can also send and recive messages from their physician. What makes Kids-RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind, including games for them to play while in a waiting room.",
         github: "https://github.com/rpecuch/kids-rx-info",
-        tech: "Created using HTML, Tailwind CSS, Bootstrap, custom CSS, JavaScript, Node.js, Express, MySQL, Sequelize, and Moment.js.",
+        tech: "Created using React, MUI, custom CSS, JavaScript, Node.js, Express, MongoDB, Mongoose, Apollo GraphQL, and Moment.js.",
         bClass: "light-caption active"
     }
 
-    const myKidsRx = {
-      id: 2,
-      image: mykidsPic,
-      // TODO: fix once app deployed (currently waiting for free credits for MongoDB). May be able to remove this I think I merged the apps
-      link: "https://kidsrx-patient.herokuapp.com/",
-      alt: 'my kids rx application',
-      title: "My Kids RX: Pediatric Patient Portal",
-      description: "A full-stack application that allows the parents of pediatric patients to view health records online. Like other EHR patient portals, features include viewing upcoming and past appointments, medications, vaccines, and vital signs. Patients can also send and recive messages from their physician. What makes My Kids RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind, including games for them to play while in a waiting room.",
-      github: "https://github.com/rpecuch/kids-rx-info",
-      tech: "Created using React, MUI, custom CSS, JavaScript, Node.js, Express, MongoDB, Mongoose, Apollo GraphQL, and Moment.js.",
-      bClass: "light-caption active"
-    }
+    // const myKidsRx = {
+    //   id: 2,
+    //   image: mykidsPic,
+    //   // TODO: fix once app deployed (currently waiting for free credits for MongoDB). May be able to remove this I think I merged the apps
+    //   link: "https://kidsrx-patient.herokuapp.com/",
+    //   alt: 'my kids rx application',
+    //   title: "My Kids RX: Pediatric Patient Portal",
+    //   description: "A full-stack application that allows the parents of pediatric patients to view health records online. Like other EHR patient portals, features include viewing upcoming and past appointments, medications, vaccines, and vital signs. Patients can also send and recive messages from their physician. What makes My Kids RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind, including games for them to play while in a waiting room.",
+    //   github: "https://github.com/rpecuch/kids-rx-info",
+    //   tech: "Created using React, MUI, custom CSS, JavaScript, Node.js, Express, MongoDB, Mongoose, Apollo GraphQL, and Moment.js.",
+    //   bClass: "light-caption active"
+    // }
 
     const party = {
         id: 2,
@@ -154,15 +153,6 @@ function Work () {
         alt={kidsRx.alt}
       >
         <Project bClass={kidsRx.bClass} link={kidsRx.link} title={kidsRx.title} github={kidsRx.github} description={kidsRx.description} tech={kidsRx.tech}/>
-      </MDBCarouselItem>
-
-      <MDBCarouselItem
-        className='w-100 d-block'
-        itemId={2}
-        src={myKidsRx.image}
-        alt={myKidsRx.alt}
-      >
-        <Project bClass={myKidsRx.bClass} link={myKidsRx.link} title={myKidsRx.title} github={myKidsRx.github} description={myKidsRx.description} tech={myKidsRx.tech}/>
       </MDBCarouselItem>
 
       <MDBCarouselItem
