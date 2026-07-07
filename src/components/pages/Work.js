@@ -52,7 +52,7 @@ function Work () {
         id: 2,
         image: partyPic,
         alt: "virtual party mom application",
-        // TODO: fix dad joke API to one that does not require authentication
+        // TODO: fix dad joke and CAH API to one that does not require authentication
         link: "https://rpecuch.github.io/virtual-party/",
         title: "Virtual Party Mom",
         description: "A tool that generates activities for group gatherings based on the current weather conditions. In-app features include a joke generator, Cards Against Humanity, and Would You Rather?!",
