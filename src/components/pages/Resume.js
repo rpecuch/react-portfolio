@@ -1,6 +1,6 @@
 import React from "react";
 //import pdf document
-import ResumeDoc from "../../documents/Resume.pdf";
+import ResumeDoc from "../../Documents/Resume.pdf";
 //import stylesheet
 import '../../styles/resume.css'
 

@@ -33,7 +33,7 @@ function Footer () {
             <ul style={styles.ul}>
                 <li style={styles.li}><a href="https://github.com/rpecuch"><FontAwesomeIcon icon={faGithub} size="2xl" style={styles.li}/></a></li>
                 <li style={styles.li}><a href="https://www.linkedin.com/in/rita-pecuch/"><FontAwesomeIcon icon={faLinkedin} size="2xl" style={styles.li}/></a></li>
-                <li style={styles.li}><a href="https://stackoverflow.com/users/20274103/rita-pecuch"><FontAwesomeIcon icon={faStackOverflow} size="2xl" style={styles.li}/></a></li>
+                {/* <li style={styles.li}><a href="https://stackoverflow.com/users/20274103/rita-pecuch"><FontAwesomeIcon icon={faStackOverflow} size="2xl" style={styles.li}/></a></li> */}
           </ul>
         </footer>
     )

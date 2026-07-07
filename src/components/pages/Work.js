@@ -26,6 +26,7 @@ function Work () {
         id: 1,
         image: kidsPic,
         alt: 'kids rx application',
+        // TODO: fix once app deployed (currently waiting for free credits for MongoDB)
         link: "https://kidsrx-provider.herokuapp.com/",
         title: "Kids RX: Pediatric Electronic Health Records",
         description: "A full-stack application that allows providers to keep track of patient records. Like other EHR systems, features include appointment scheduling, creating patient charts, writing medical record notes, logging vital signs, and logging vaccination records. What makes Kids RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind.",
@@ -37,6 +38,7 @@ function Work () {
     const myKidsRx = {
       id: 2,
       image: mykidsPic,
+      // TODO: fix once app deployed (currently waiting for free credits for MongoDB). May be able to remove this I think I merged the apps
       link: "https://kidsrx-patient.herokuapp.com/",
       alt: 'my kids rx application',
       title: "My Kids RX: Pediatric Patient Portal",
@@ -50,6 +52,7 @@ function Work () {
         id: 2,
         image: partyPic,
         alt: "virtual party mom application",
+        // TODO: fix dad joke API to one that does not require authentication
         link: "https://rpecuch.github.io/virtual-party/",
         title: "Virtual Party Mom",
         description: "A tool that generates activities for group gatherings based on the current weather conditions. In-app features include a joke generator, Cards Against Humanity, and Would You Rather?!",
