@@ -23,7 +23,8 @@ function Navigation({ page, changePage}) {
     return (
         <nav style={styles.nav}>
                 <a className="navbar-brand" href="#about" onClick={() => changePage('About')} style={page === 'About' ? styles.selected : styles.default}>About</a>
-                <a className="navbar-brand" href="#work" onClick={() => changePage('Work')} style={page === 'Work' ? styles.selected : styles.default}>Work Samples</a>
+                <a className="navbar-brand" href="#samples" onClick={() => changePage('Samples')} style={page === 'Samples' ? styles.selected : styles.default}>Web Development Samples</a>
+                <a className="navbar-brand" href="#bio" onClick={() => changePage('Bio')} style={page === 'Bio' ? styles.selected : styles.default}>Bioinformatics Samples</a>
                 <a className="navbar-brand" href="#resume" onClick={() => changePage('Resume')} style={page === 'Resume' ? styles.selected : styles.default}>Resume</a>
                 <a className="navbar-brand" href="#contact" onClick={() => changePage('Contact')} style={page === 'Contact' ? styles.selected : styles.default}>Contact</a>
         </nav>
