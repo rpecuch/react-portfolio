@@ -5,6 +5,9 @@ import Project from '../Project';
 import '../../styles/work.css'
 // import images
 import metaPic from '../../images/metagenomics_pipeline.png';
+import explorePic from '../../images/lms-exploratory.png';
+import corrPic from '../../images/wgcna.png';
+import crisprPic from '../../images/crispr.jpg';
 
 //import carousel components
 import {
@@ -18,38 +21,49 @@ function Bio () {
         id: 1,
         image: metaPic,
         alt: 'metagenomics project',
-        link: "https://github.com/rpecuch/sepsis-detection-metagenomics",
+        link: "https://usegalaxy.org/published/workflow?id=0e3aab2ca69b4a2a",
         title: "Metagenomics Analysis for Sepsis Detection",
-        description: "Placeholder description",
+        description: "A metagenomics analysis for sepsis detection using R and command-line tools.",
         github: "https://github.com/rpecuch/sepsis-detection-metagenomics",
         tech: "Created using R and command-line tools on Galaxy server.",
         bClass: "light-caption active"
     }
 
-    // const party = {
-    //     id: 2,
-    //     image: partyPic,
-    //     alt: "virtual party mom application",
-    //     // TODO: fix dad joke and CAH API to one that does not require authentication
-    //     link: "https://rpecuch.github.io/virtual-party/",
-    //     title: "Virtual Party Mom",
-    //     description: "A tool that generates activities for group gatherings based on the current weather conditions. In-app features include a joke generator, Cards Against Humanity, and Would You Rather?!",
-    //     github: "https://github.com/rpecuch/virtual-party",
-    //     tech: "Created using HTML, Tailwind CSS, Bootstrap, custom CSS, JavaScript, jQuery, and Moment.js.",
-    //     bClass: "light-caption"
-    // }
+    const lms_exploratory = {
+        id: 2,
+        image: explorePic,
+        alt: "lms exploratory project",
+        link: "https://github.com/rpecuch/lms-transcriptomic-biomarker-exploration",
+        title: "LMS Transcriptomic Biomarker Exploration",
+        description: "An exploratory analysis of transcriptomic biomarkers in LMS using R and Bioconductor packages.",
+        github: "https://github.com/rpecuch/lms-transcriptomic-biomarker-exploration",
+        tech: "Created using R and Bioconductor packages.",
+        bClass: "light-caption"
+    }
 
-    // const quiz = {
-    //     id: 3,
-    //     image: quizPic,
-    //     alt: "javascript quiz application",
-    //     link: "https://rpecuch.github.io/javascript-quiz/",
-    //     title: "JavaScript Coding Quiz",
-    //     description: "An interactive timed quiz about JavaScript concepts.",
-    //     github: "https://github.com/rpecuch/javascript-quiz",
-    //     tech: "Created using HTML, custom CSS, and JavaScript.",
-    //     bClass: "dark-caption"
-    // }
+    const wgcna = {
+        id: 3,
+        image: corrPic,
+        alt: "wgcna project",
+        link: "https://github.com/rpecuch/lms_wgcna",
+        title: "Weighted Gene Correlation Network Analysis of Leiomyosarcoma Transcriptomic Data",
+        description: "A weighted gene correlation network analysis of LMS transcriptomic data.",
+        github: "https://github.com/rpecuch/lms_wgcna",
+        tech: "Created using R and Bioconductor packages..",
+        bClass: "light-caption"
+    }
+
+    const crispr = {
+        id: 4,
+        image: crisprPic,
+        alt: "crispr project",
+        link: "https://github.com/rpecuch/crispr-gene-candidates",
+        title: "CRISPR Gene Candidates Identification Pipeline",
+        description: "A simple pipeline to to identify samples with suitable CRISPR gene candidates",
+        github: "https://github.com/rpecuch/crispr-gene-candidates",
+        tech: "Created using Python and Bash scripting.",
+        bClass: "dark-caption"
+    }
 
     //displays Work Samples page using a carousel of project components
     return(
@@ -61,6 +75,33 @@ function Bio () {
         alt={metagenomics.alt}
       >
         <Project bClass={metagenomics.bClass} link={metagenomics.link} title={metagenomics.title} github={metagenomics.github} description={metagenomics.description} tech={metagenomics.tech}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={2}
+        src={lms_exploratory.image}
+        alt={lms_exploratory.alt}
+      >
+        <Project bClass={lms_exploratory.bClass} link={lms_exploratory.link} title={lms_exploratory.title} github={lms_exploratory.github} description={lms_exploratory.description} tech={lms_exploratory.tech}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={3}
+        src={wgcna.image}
+        alt={wgcna.alt}
+      >
+        <Project bClass={wgcna.bClass} link={wgcna.link} title={wgcna.title} github={wgcna.github} description={wgcna.description} tech={wgcna.tech}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={4}
+        src={crispr.image}
+        alt={crispr.alt}
+      >
+        <Project bClass={crispr.bClass} link={crispr.link} title={crispr.title} github={crispr.github} description={crispr.description} tech={crispr.tech}/>
       </MDBCarouselItem>
 
     </MDBCarousel>
