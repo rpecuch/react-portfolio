@@ -21,8 +21,9 @@ export default function Portfolio() {
         }
         else if (page === 'Resume') {
             return <Resume />
-        }
-        else {
+        } else if (page === 'Contact') {
+            return <Contact />
+        } else {
             return <About />
         }
     }

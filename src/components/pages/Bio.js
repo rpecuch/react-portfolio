@@ -8,6 +8,7 @@ import metaPic from '../../images/metagenomics_pipeline.png';
 import explorePic from '../../images/lms-exploratory.png';
 import corrPic from '../../images/wgcna.png';
 import crisprPic from '../../images/crispr.jpg';
+import cancerPic from '../../images/breast_cancer.png';
 
 //import carousel components
 import {
@@ -49,7 +50,7 @@ function Bio () {
         title: "Weighted Gene Correlation Network Analysis of Leiomyosarcoma Transcriptomic Data",
         description: "A weighted gene correlation network analysis of LMS transcriptomic data.",
         github: "https://github.com/rpecuch/lms_wgcna",
-        tech: "Created using R and Bioconductor packages..",
+        tech: "Created using R and Bioconductor packages.",
         bClass: "light-caption"
     }
 
@@ -65,21 +66,24 @@ function Bio () {
         bClass: "dark-caption"
     }
 
+    const breast_cancer = {
+        id: 5,
+        image: cancerPic,
+        alt: "breast cancer classification project",
+        link: "https://github.com/rpecuch/breast-cancer-classification-model-eval",
+        title: "Evaluation of breast cancer classification models for RNA sequencing data",
+        description: "Training and evaluation of various classification models for breast cancer using RNA sequencing data.",
+        github: "https://github.com/rpecuch/breast-cancer-classification-model-eval",
+        tech: "Created using R and Bioconductor packages.",
+        bClass: "dark-caption"
+    }
+
     //displays Work Samples page using a carousel of project components
     return(
     <MDBCarousel showIndicators dark fade>
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={1}
-        src={metagenomics.image}
-        alt={metagenomics.alt}
-      >
-        <Project bClass={metagenomics.bClass} link={metagenomics.link} title={metagenomics.title} github={metagenomics.github} description={metagenomics.description} tech={metagenomics.tech}/>
-      </MDBCarouselItem>
-
-      <MDBCarouselItem
-        className='w-100 d-block'
-        itemId={2}
         src={lms_exploratory.image}
         alt={lms_exploratory.alt}
       >
@@ -88,7 +92,7 @@ function Bio () {
 
       <MDBCarouselItem
         className='w-100 d-block'
-        itemId={3}
+        itemId={2}
         src={wgcna.image}
         alt={wgcna.alt}
       >
@@ -97,7 +101,25 @@ function Bio () {
 
       <MDBCarouselItem
         className='w-100 d-block'
+        itemId={3}
+        src={metagenomics.image}
+        alt={metagenomics.alt}
+      >
+        <Project bClass={metagenomics.bClass} link={metagenomics.link} title={metagenomics.title} github={metagenomics.github} description={metagenomics.description} tech={metagenomics.tech}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
         itemId={4}
+        src={breast_cancer.image}
+        alt={breast_cancer.alt}
+      >
+        <Project bClass={breast_cancer.bClass} link={breast_cancer.link} title={breast_cancer.title} github={breast_cancer.github} description={breast_cancer.description} tech={breast_cancer.tech}/>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={5}
         src={crispr.image}
         alt={crispr.alt}
       >

@@ -34,24 +34,10 @@ function Work () {
         bClass: "light-caption active"
     }
 
-    // const myKidsRx = {
-    //   id: 2,
-    //   image: mykidsPic,
-    //   // TODO: fix once app deployed (currently waiting for free credits for MongoDB). May be able to remove this I think I merged the apps
-    //   link: "https://kidsrx-patient.herokuapp.com/",
-    //   alt: 'my kids rx application',
-    //   title: "My Kids RX: Pediatric Patient Portal",
-    //   description: "A full-stack application that allows the parents of pediatric patients to view health records online. Like other EHR patient portals, features include viewing upcoming and past appointments, medications, vaccines, and vital signs. Patients can also send and recive messages from their physician. What makes My Kids RX different is that it is specifically designed for use in pediatrics and includes features that were implemented with children in mind, including games for them to play while in a waiting room.",
-    //   github: "https://github.com/rpecuch/kids-rx-info",
-    //   tech: "Created using React, MUI, custom CSS, JavaScript, Node.js, Express, MongoDB, Mongoose, Apollo GraphQL, and Moment.js.",
-    //   bClass: "light-caption active"
-    // }
-
     const party = {
         id: 2,
         image: partyPic,
         alt: "virtual party mom application",
-        // TODO: fix dad joke and CAH API to one that does not require authentication
         link: "https://rpecuch.github.io/virtual-party/",
         title: "Virtual Party Mom",
         description: "A tool that generates activities for group gatherings based on the current weather conditions. In-app features include a joke generator, Cards Against Humanity, and Would You Rather?!",
