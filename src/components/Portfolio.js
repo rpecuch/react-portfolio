@@ -4,7 +4,8 @@ import Header from './Header';
 import Footer from './Footer';
 //import pages
 import About from './pages/About';
-import Work from './pages/Work';
+import Samples from './pages/Samples';
+import Bio from './pages/Bio';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
@@ -12,17 +13,18 @@ export default function Portfolio() {
     const [page, setPage] = useState('About');
     //renders a different page depending on current value of state variable page
     const displayPage = () => {
-        if (page === 'About') {
-            return <About />
+        if (page === 'Samples') {
+            return <Samples />
         }
-        if (page === 'Work') {
-            return <Work />
+        else if (page === 'Bio') {
+            return <Bio />
         }
-        if (page === 'Resume') {
+        else if (page === 'Resume') {
             return <Resume />
-        }
-        else {
+        } else if (page === 'Contact') {
             return <Contact />
+        } else {
+            return <About />
         }
     }
     //sets value of state variable page to the value of the input parameter
