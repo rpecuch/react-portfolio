@@ -11,8 +11,8 @@ function About() {
             <div className="container text-center bg-light custom-container">
                 <h2 className="display-4">About</h2>
                 <img src={Headshot} alt="headshot"></img>
-                <p id="bio">I am a full-stack developer that completed the full-time bootcamp at Rutgers University! I come from an extensive background of biology and healthcare. I graduated from Oakland University with a B.S. in Biomedical Science in May 2021, and worked in clinical medicine for five years. I am interested in creating applications for use in healthcare or STEM! I am very knowledgeable in the medical, pharmaceutical, and research industries.</p>
-                <p style={{fontSize: '150%'}}>Key Skills: JavaScript, Python, C#, MySQL, NoSQL</p>
+                <p id="bio">I am a data science and engineering leader with expertise in clinical trial operations and systems, web development, and bioinformatics. I enjoy building scalable, open-source, and AI-driven solutions that simplify complex scientific and clinical workflows. My work focuses on developing practical technologies that accelerate clinical development and support informed decision-making while maintaining high standards for regulatory compliance and patient safety. While many of my most impactful projects are proprietary and cannot be shared publicly, this portfolio highlights the breadth of my technical skills across software engineering, data science, bioinformatics, and modern web technologies.</p>
+                {/* <p style={{fontSize: '150%'}}>Key Skills: JavaScript, Python, C#, MySQL, NoSQL</p> */}
             </div>
         </div>
     )
